@@ -1126,16 +1126,16 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 471146566}
-  - {fileID: 970552571}
-  - {fileID: 1050605670}
-  - {fileID: 829464563}
-  - {fileID: 96410850}
-  - {fileID: 124561710}
   - {fileID: 2098291726}
   - {fileID: 1058142170}
   - {fileID: 1063554294}
   - {fileID: 511168290}
   - {fileID: 1828050657}
+  - {fileID: 970552571}
+  - {fileID: 1050605670}
+  - {fileID: 829464563}
+  - {fileID: 96410850}
+  - {fileID: 124561710}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2977,7 +2977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 2059785214}
+  itemImage: {fileID: 1151079766}
 --- !u!1 &1209212088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4917,9 +4917,10 @@ GameObject:
   - component: {fileID: 2098291726}
   - component: {fileID: 2098291728}
   - component: {fileID: 2098291727}
+  - component: {fileID: 2098291729}
   m_Layer: 5
   m_Name: DraggableArea
-  m_TagString: Untagged
+  m_TagString: EquipClothes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4981,6 +4982,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098291725}
   m_CullTransparentMesh: 1
+--- !u!114 &2098291729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098291725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771aea6b2a954d749a29d47ce01959ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerClothes
+  currentlyDraggedItem: {fileID: 0}
+  currentGameobject: {fileID: 0}
+  cursorIsOnTop: 0
+  headImage: {fileID: 1828050658}
+  torsoImage: {fileID: 511168291}
+  legsImage: {fileID: 1063554295}
+  feetImage: {fileID: 1058142171}
+  emptySprite: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
