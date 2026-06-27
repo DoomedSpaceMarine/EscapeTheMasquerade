@@ -130,6 +130,7 @@ public class Inventory : MonoBehaviour
 
     private void DrawInventory(ClothType type)
     {
+        ResetInventoryImages();
         switch (type)
         {
             case ClothType.Head:
@@ -181,4 +182,36 @@ public class Inventory : MonoBehaviour
                 break;
         }
     }
-}
+
+    private void ResetInventoryImages()
+    {
+                for(int i = 0; i < headSlots.Count; i++)
+                {
+                    headSlots[i].slotIsFull = false;
+                    headSlots[i].slotImage.sprite = null;
+                    headSlots[i].slotItem = null;
+                }
+              
+                for (int i = 0; i < torsoSlots.Count; i++)
+                {
+                    torsoSlots[i].slotIsFull = false;
+                    torsoSlots[i].slotImage.sprite = null;
+                    torsoSlots[i].slotItem = null;
+                }
+
+                for (int i = 0; i < legsSlots.Count; i++)
+                {
+                    legsSlots[i].slotIsFull = false;
+                    legsSlots[i].slotImage = null;
+                    legsSlots[i].slotItem = null;
+                }
+
+                for (int i = 0; i < feetSlots.Count; i++)
+                {
+                    feetSlots[i].slotIsFull = false;
+                    feetSlots[i].slotImage = null;
+                    feetSlots[i].slotItem = null;
+                }
+        }
+    }
+

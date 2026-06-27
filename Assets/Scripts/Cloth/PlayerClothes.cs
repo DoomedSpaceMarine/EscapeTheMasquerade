@@ -49,6 +49,10 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         switch (currentlyDraggedItem.clothType)
         {
             case ClothType.Head:
+                if(headItem != null)
+                {
+                    _eventManager.AddItemToInventory(headItem);
+                }
                 headItem = currentlyDraggedItem;
                 headImage.sprite = currentlyDraggedItem.wornSprite;
                 break;

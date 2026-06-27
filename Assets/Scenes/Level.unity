@@ -2792,6 +2792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   headClothes:
   - {fileID: 11400000, guid: 2ce72a7cd543aa14a9de9673c589c25d, type: 2}
+  - {fileID: 11400000, guid: 3b4bc940ea3ca0f43b5388b91c9dc86d, type: 2}
   torsoClothes:
   - {fileID: 11400000, guid: f1e485f3d335dc14aaa9ae1c63f78973, type: 2}
   legsClothes:
