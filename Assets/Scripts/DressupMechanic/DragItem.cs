@@ -3,9 +3,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     private PlayerClothes playerClothes;
+    private InventorySlot thisSlot;
 
     public Vector2 itemOriginalPosition;
 
@@ -15,20 +16,28 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         itemOriginalPosition = transform.position;
 
+        thisSlot= GetComponent<InventorySlot>();    
+
         playerClothes = FindFirstObjectByType<PlayerClothes>();
     }
 
     public void OnBeginDrag(PointerEventData data)
     {
-        itemImage.raycastTarget = false;
-        itemImage.maskable = false;
-        playerClothes.currentGameobject = data.pointerDrag;
-        playerClothes.currentlyDraggedItem = playerClothes.currentGameobject.GetComponent<InventorySlot>().slotItem;
+        if (thisSlot.slotIsFull)
+        {
+            itemImage.raycastTarget = false;
+            itemImage.maskable = false;
+            playerClothes.currentGameobject = data.pointerDrag;
+            playerClothes.currentlyDraggedItem = playerClothes.currentGameobject.GetComponent<InventorySlot>().slotItem;
+        }
     }
 
     public void OnDrag(PointerEventData data)
     {
-        transform.position = data.position;
+        if (thisSlot.slotIsFull)
+        {
+            transform.position = data.position;
+        }
         
     }
 
@@ -41,11 +50,5 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         transform.position = itemOriginalPosition;
         itemImage.raycastTarget = true;
         itemImage.maskable = true;
-    }
-
-    public void OnDrop(PointerEventData data)
-    {
-       
-
     }
 }

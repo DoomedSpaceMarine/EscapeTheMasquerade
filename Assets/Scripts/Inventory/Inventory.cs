@@ -202,14 +202,14 @@ public class Inventory : MonoBehaviour
                 for (int i = 0; i < legsSlots.Count; i++)
                 {
                     legsSlots[i].slotIsFull = false;
-                    legsSlots[i].slotImage = null;
+                    legsSlots[i].slotImage.sprite = null;
                     legsSlots[i].slotItem = null;
                 }
 
                 for (int i = 0; i < feetSlots.Count; i++)
                 {
                     feetSlots[i].slotIsFull = false;
-                    feetSlots[i].slotImage = null;
+                    feetSlots[i].slotImage.sprite = null;
                     feetSlots[i].slotItem = null;
                 }
         }
