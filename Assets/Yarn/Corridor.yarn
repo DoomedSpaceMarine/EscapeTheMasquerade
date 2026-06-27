@@ -1,0 +1,20 @@
+﻿title: DraculaDoor
+---
+    -> Open Door
+     <<jump FinalJudgement>>
+    -> Listen
+        <<jump ListenToDracula>>
+===
+
+title: ListenToDracula
+---
+Behind the door you can hear muffled voices and a distant sound of a piano being played.
+Near the door someone speaks.
+???: I fancy how everything is decorated in roses.
+===
+
+title: FinalJudgement
+---
+<<change_room Ballroom>>
+The corridor door opens into a ballroom full of guests and in the center Dracula awaits.
+===

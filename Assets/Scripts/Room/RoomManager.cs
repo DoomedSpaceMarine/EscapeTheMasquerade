@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class RoomManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private GameObject closetCanvas;
 
     [SerializeField] private Button closeClosetButton;
+
+    [SerializeField] private DialogueRunner _dialogueRunner;
 
     private void OnEnable()
     {
@@ -31,6 +34,10 @@ public class RoomManager : MonoBehaviour
             => ToggleClosetCanvas(false));  
         
         closetCanvas.SetActive(false);
+
+        _dialogueRunner = FindFirstObjectByType<DialogueRunner>();
+
+        _dialogueRunner.AddCommandHandler<string>("change_room", ChangeRoom);
     }
 
     private void ToggleClosetCanvas(bool enabled)
@@ -40,5 +47,24 @@ public class RoomManager : MonoBehaviour
             _eventManager.CloseInventory();
         }
         closetCanvas.SetActive(enabled);
+    }
+
+    private void ChangeRoom(string roomName)
+    {
+        if(roomName == "Ballroom")
+        {
+            for(int i = 0; i < rooms.Count; i++)
+            {
+                if (rooms[i].roomType == RoomType.Ballroom)
+                {
+                    rooms[i].gameObject.SetActive(true);
+                }
+
+                if (rooms[i].roomType == RoomType.Corridor)
+                {
+                    rooms[i].gameObject.SetActive(false);
+                }
+            }
+        }
     }
 }
