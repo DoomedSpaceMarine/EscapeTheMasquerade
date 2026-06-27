@@ -26,4 +26,8 @@ public class EventManager : MonoBehaviour
     public event Action onCloseInventory;
     public void CloseInventory() => onCloseInventory?.Invoke();
 
+    //--Dialogue--
+    public event Action<string> onStartDialogue;
+    public void StartDialogue(string node) => onStartDialogue?.Invoke(node);
+
 }
