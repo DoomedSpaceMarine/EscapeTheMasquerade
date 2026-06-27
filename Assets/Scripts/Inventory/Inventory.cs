@@ -77,15 +77,19 @@ public class Inventory : MonoBehaviour
         {
             case ClothType.Head:
                 headClothes.Remove(item);
+                DrawInventory(item.clothType);
                 break;
             case ClothType.Torso:
                 torsoClothes.Remove(item);
+                DrawInventory(item.clothType);
                 break;
             case ClothType.Legs:
                 legsClothes.Remove(item);
+                DrawInventory(item.clothType);
                 break;
             case ClothType.Feet:
                 feetClothes.Remove(item);
+                DrawInventory(item.clothType);
                 break;
         }
     }

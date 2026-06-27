@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+
+    private EventManager _eventManager;
+
     public ClothItemSO currentlyDraggedItem;
 
     public GameObject currentGameobject;
@@ -25,9 +28,14 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     //Naked sprite
     [SerializeField] private Sprite emptySprite;
 
+    private void Start()
+    {
+        _eventManager = FindFirstObjectByType<EventManager>();
+    }
+
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
-      cursorIsOnTop = true;
+       cursorIsOnTop = true;
     }
 
     //Detect when Cursor leaves the GameObject
@@ -58,6 +66,10 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                 break;
         }
 
+        currentGameobject.GetComponent<InventorySlot>().slotIsFull = false;
+        currentGameobject.GetComponent<InventorySlot>().slotImage.sprite = null;
+        _eventManager.RemoveItemFromInventory(currentlyDraggedItem);
+        
         currentlyDraggedItem = null;
         currentGameobject = null;
     }
