@@ -33,6 +33,7 @@ public class Inventory : MonoBehaviour
         _eventManager.onAddItemToInventory += AddItemToInventory;
         _eventManager.onRemoveItemFromInventory += RemoveItemFromInventory;
         _eventManager.onOpenInventory += OpenInventory;
+        _eventManager.onCloseInventory += CloseInventory;
     }
 
     private void OnDisable()
@@ -40,6 +41,7 @@ public class Inventory : MonoBehaviour
         _eventManager.onAddItemToInventory -= AddItemToInventory;
         _eventManager.onRemoveItemFromInventory -= RemoveItemFromInventory;
         _eventManager.onOpenInventory -= OpenInventory;
+        _eventManager.onCloseInventory -= CloseInventory;
     }
 
     private void Start()
@@ -112,6 +114,14 @@ public class Inventory : MonoBehaviour
                 DrawInventory(clothType);
                 break;
         }
+    }
+
+    private void CloseInventory()
+    {
+        headSlotParent.SetActive(false);
+        torsoSlotParent.SetActive(false);
+        legsSlotParent.SetActive(false);
+        feetSlotParent.SetActive(false);
     }
 
     private void DrawInventory(ClothType type)

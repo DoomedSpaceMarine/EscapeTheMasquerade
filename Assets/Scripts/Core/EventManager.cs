@@ -22,5 +22,8 @@ public class EventManager : MonoBehaviour
     //Open Inventory
     public event Action<ClothType> onOpenInventory;
     public void OpenInventory(ClothType clothType) => onOpenInventory?.Invoke(clothType);
+    //Close Inventory
+    public event Action onCloseInventory;
+    public void CloseInventory() => onCloseInventory?.Invoke();
 
 }
