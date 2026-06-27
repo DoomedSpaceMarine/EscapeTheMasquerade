@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private string loseDraculaNode;
 
     [SerializeField] private GameObject badEnding;
+    [SerializeField] private GameObject goodEnding;
 
     //Player equipped items
     public ClothItemSO headItem;
@@ -28,8 +29,10 @@ public class GameManager : MonoBehaviour
 
         _dialogueRunner.AddCommandHandler("dracula_test", DraculaTest);
         _dialogueRunner.AddCommandHandler("dracuul_bad", ShowBadEnding);
+        _dialogueRunner.AddCommandHandler("dracuul_good", ShowGoodEnding);
 
         badEnding.SetActive(false);
+        goodEnding.SetActive(false);
     }
     public void DraculaTest()
     {
@@ -54,6 +57,11 @@ public class GameManager : MonoBehaviour
     private void ShowBadEnding()
     {
         badEnding.SetActive(true);
+    }
+
+    private void ShowGoodEnding()
+    {
+        goodEnding.SetActive(true);
     }
 
     private  IEnumerator WinDelay()

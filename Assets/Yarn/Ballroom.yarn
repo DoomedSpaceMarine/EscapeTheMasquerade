@@ -5,3 +5,13 @@ Dracula: I can see through your pitiful disguise.
 Dracula: Dear guests, the dinner has been set. Dig in. 
 <<dracuul_bad>>
 ===
+
+title: Victory
+---
+Dracula: Ah, welcome dear guest, I think we haven't been introduced yet. 
+Dracula: I am Count Dracula and I welcome you to my castle.
+Dracula: Can I offer you anything to sate your hunger?
+You mumble something in response and excuse yourself. 
+You make it to the doors that lead outside from the castle.
+<<dracuul_good>>
+===
