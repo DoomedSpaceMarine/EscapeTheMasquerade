@@ -76,7 +76,57 @@ public class Inventory : MonoBehaviour
     {
         switch (type)
         {
-           
+            case ClothType.Head:
+                headSlots.Clear();
+                for(int i = 0; i < headClothes.Count; i++)
+                {
+                    if (!headSlots[i].slotIsFull)
+                    {
+                        headSlots[i].slotIsFull = true;
+                        headSlots[i].slotItem = headClothes[i];
+                        headSlots[i].SetImage(headClothes[i].wardrobeSprite);
+                    }
+                }
+                break;
+
+            case ClothType.Torso:
+                torsoSlots.Clear();
+                for (int i = 0; i < torsoClothes.Count; i++)
+                {
+                    if (!torsoSlots[i].slotIsFull)
+                    {
+                        torsoSlots[i].slotIsFull = true;
+                        torsoSlots[i].slotItem = torsoClothes[i];
+                        torsoSlots[i].SetImage(torsoClothes[i].wardrobeSprite);
+                    }
+                }
+                break;
+
+            case ClothType.Legs:
+                legsSlots.Clear();
+                for (int i = 0; i < legsClothes.Count; i++)
+                {
+                    if (!legsSlots[i].slotIsFull)
+                    {
+                        legsSlots[i].slotIsFull = true;
+                        legsSlots[i].slotItem = legsClothes[i];
+                        legsSlots[i].SetImage(legsClothes[i].wardrobeSprite);
+                    }
+                }
+                break;
+
+            case ClothType.Feet:
+                feetSlots.Clear();
+                for (int i = 0; i < feetClothes.Count; i++)
+                {
+                    if (!feetSlots[i].slotIsFull)
+                    {
+                        feetSlots[i].slotIsFull = true;
+                        feetSlots[i].slotItem = feetClothes[i];
+                        feetSlots[i].SetImage(feetClothes[i].wardrobeSprite);
+                    }
+                }
+                break;
         }
     }
 }
