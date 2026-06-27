@@ -1,15 +1,24 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+
 
 public class Inventory : MonoBehaviour
 {
     private EventManager _eventManager;
 
+    //Items
     [SerializeField] private List<ClothItemSO> headClothes = new List<ClothItemSO>();
     [SerializeField] private List<ClothItemSO> torsoClothes = new List<ClothItemSO>();
     [SerializeField] private List<ClothItemSO> legsClothes = new List<ClothItemSO>();
     [SerializeField] private List<ClothItemSO> feetClothes = new List<ClothItemSO>();
+
+    //Slots
+    [SerializeField] private List<InventorySlot> headSlots = new List<InventorySlot>();
+    [SerializeField] private List<InventorySlot> torsoSlots = new List<InventorySlot>();
+    [SerializeField] private List<InventorySlot> legsSlots = new List<InventorySlot>();
+    [SerializeField] private List<InventorySlot> feetSlots = new List<InventorySlot>();
 
     private void OnEnable()
     {
@@ -60,6 +69,14 @@ public class Inventory : MonoBehaviour
             case ClothType.Feet:
                 feetClothes.Remove(item);
                 break;
+        }
+    }
+
+    private void DrawInventory(ClothType type)
+    {
+        switch (type)
+        {
+           
         }
     }
 }
