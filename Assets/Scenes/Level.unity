@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 999135449}
+  itemImage: {fileID: 164249247}
 --- !u!1 &269643417
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 2059785214}
+  itemImage: {fileID: 269643419}
 --- !u!1 &471146565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 593861998}
+  itemImage: {fileID: 679751411}
 --- !u!1 &822833933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,7 +1785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 999135449}
+  itemImage: {fileID: 822833935}
 --- !u!1 &829464562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 1535705548}
+  itemImage: {fileID: 894979050}
 --- !u!1 &924102939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,7 +2530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 999135449}
+  itemImage: {fileID: 1049233087}
 --- !u!1 &1050605669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,7 +3132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 1535705548}
+  itemImage: {fileID: 1240399293}
 --- !u!1 &1298342313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,7 +3292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 593861998}
+  itemImage: {fileID: 1415522595}
 --- !u!1 &1497461078
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,7 +3429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 1535705548}
+  itemImage: {fileID: 1526345857}
 --- !u!1 &1535705546
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,7 +3641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 2059785214}
+  itemImage: {fileID: 1581338596}
 --- !u!1 &1596817949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3747,7 +3747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 593861998}
+  itemImage: {fileID: 1596817951}
 --- !u!1 &1620267995
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,7 +3902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 593861998}
+  itemImage: {fileID: 1628487528}
 --- !u!1 &1643928245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4099,7 +4099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 2059785214}
+  itemImage: {fileID: 1689465198}
 --- !u!1 &1763076763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,7 +4205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 999135449}
+  itemImage: {fileID: 1763076765}
 --- !u!1 &1808057360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4596,7 +4596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragItem
   itemOriginalPosition: {x: 0, y: 0}
-  itemImage: {fileID: 1535705548}
+  itemImage: {fileID: 1866509676}
 --- !u!1 &1906586235
 GameObject:
   m_ObjectHideFlags: 0
@@ -4997,6 +4997,10 @@ MonoBehaviour:
   currentlyDraggedItem: {fileID: 0}
   currentGameobject: {fileID: 0}
   cursorIsOnTop: 0
+  headItem: {fileID: 0}
+  torsoItem: {fileID: 0}
+  legsItem: {fileID: 0}
+  feetItem: {fileID: 0}
   headImage: {fileID: 1828050658}
   torsoImage: {fileID: 511168291}
   legsImage: {fileID: 1063554295}

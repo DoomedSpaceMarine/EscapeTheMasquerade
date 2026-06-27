@@ -10,7 +10,13 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public bool cursorIsOnTop;
 
-    //Player equipped slots
+    //Player equipped items
+    [SerializeField] private ClothItemSO headItem;
+    [SerializeField] private ClothItemSO torsoItem;
+    [SerializeField] private ClothItemSO legsItem;
+    [SerializeField] private ClothItemSO feetItem;
+
+    //Player equipped image slots
     [SerializeField] private Image headImage;
     [SerializeField] private Image torsoImage;
     [SerializeField] private Image legsImage;
@@ -28,6 +34,32 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerExit(PointerEventData pointerEventData)
     {
         cursorIsOnTop = false;
+    }
+
+    public void NewItemIsDropped()
+    {
+        switch (currentlyDraggedItem.clothType)
+        {
+            case ClothType.Head:
+                headItem = currentlyDraggedItem;
+                headImage.sprite = currentlyDraggedItem.wornSprite;
+                break;
+            case ClothType.Torso:
+                torsoItem = currentlyDraggedItem;
+                torsoImage.sprite = currentlyDraggedItem.wornSprite;
+                break;
+            case ClothType.Legs:
+                legsItem = currentlyDraggedItem;
+                legsImage.sprite = currentlyDraggedItem.wornSprite;
+                break;
+            case ClothType.Feet:
+                feetItem = currentlyDraggedItem;
+                feetImage.sprite = currentlyDraggedItem.wornSprite;
+                break;
+        }
+
+        currentlyDraggedItem = null;
+        currentGameobject = null;
     }
 
 }

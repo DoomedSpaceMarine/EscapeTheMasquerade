@@ -36,7 +36,7 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         if (playerClothes.cursorIsOnTop)
         {
-            Debug.Log("Item dropped on top of draggable");
+            playerClothes.NewItemIsDropped();
         }
         transform.position = itemOriginalPosition;
         itemImage.raycastTarget = true;
