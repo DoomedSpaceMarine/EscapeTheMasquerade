@@ -129,7 +129,6 @@ public class Inventory : MonoBehaviour
         switch (type)
         {
             case ClothType.Head:
-                headSlots.Clear();
                 for(int i = 0; i < headClothes.Count; i++)
                 {
                     if (!headSlots[i].slotIsFull)
@@ -142,7 +141,6 @@ public class Inventory : MonoBehaviour
                 break;
 
             case ClothType.Torso:
-                torsoSlots.Clear();
                 for (int i = 0; i < torsoClothes.Count; i++)
                 {
                     if (!torsoSlots[i].slotIsFull)
@@ -155,7 +153,6 @@ public class Inventory : MonoBehaviour
                 break;
 
             case ClothType.Legs:
-                legsSlots.Clear();
                 for (int i = 0; i < legsClothes.Count; i++)
                 {
                     if (!legsSlots[i].slotIsFull)
@@ -168,7 +165,6 @@ public class Inventory : MonoBehaviour
                 break;
 
             case ClothType.Feet:
-                feetSlots.Clear();
                 for (int i = 0; i < feetClothes.Count; i++)
                 {
                     if (!feetSlots[i].slotIsFull)

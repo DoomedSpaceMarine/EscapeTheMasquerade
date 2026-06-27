@@ -9,6 +9,6 @@ public class InventorySlot : MonoBehaviour
 
     public void SetImage(Sprite sprite) 
     { 
-        slotImage.sprite = sprite; 
+        slotImage.sprite = sprite;
     }
 }

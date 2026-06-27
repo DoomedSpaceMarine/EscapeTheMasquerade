@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c54f50ddd4be74f85d4c11b6248ae1, type: 3}
+  m_Name: TestLegs
+  m_EditorClassIdentifier: Assembly-CSharp::ClothItemSO
+  wardrobeSprite: {fileID: 21300000, guid: 0dd09f5a6d5266044b1115e39d09cc5b, type: 3}
+  wornSprite: {fileID: 21300000, guid: 6eabe5a32e3be784f9e196342dcfd813, type: 3}
+  clothType: 2
+  clothTag: 1
