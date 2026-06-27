@@ -17,4 +17,5 @@ title: FinalJudgement
 ---
 <<change_room Ballroom>>
 The corridor door opens into a ballroom full of guests and in the center Dracula awaits.
+<<dracula_test>>
 ===

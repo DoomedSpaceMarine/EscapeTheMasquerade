@@ -14,7 +14,7 @@ public class RoomManager : MonoBehaviour
 
     [SerializeField] private Button closeClosetButton;
 
-    [SerializeField] private DialogueRunner _dialogueRunner;
+   private DialogueRunner _dialogueRunner;
 
     private void OnEnable()
     {

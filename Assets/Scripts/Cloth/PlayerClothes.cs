@@ -6,18 +6,13 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 {
 
     private EventManager _eventManager;
+    private GameManager _gameManager;
 
     public ClothItemSO currentlyDraggedItem;
 
     public GameObject currentGameobject;
 
     public bool cursorIsOnTop;
-
-    //Player equipped items
-    [SerializeField] private ClothItemSO headItem;
-    [SerializeField] private ClothItemSO torsoItem;
-    [SerializeField] private ClothItemSO legsItem;
-    [SerializeField] private ClothItemSO feetItem;
 
     //Player equipped image slots
     [SerializeField] private Image headImage;
@@ -31,6 +26,7 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private void Start()
     {
         _eventManager = FindFirstObjectByType<EventManager>();
+        _gameManager= FindFirstObjectByType<GameManager>();
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
@@ -49,23 +45,35 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         switch (currentlyDraggedItem.clothType)
         {
             case ClothType.Head:
-                if(headItem != null)
+                if(_gameManager.headItem != null)
                 {
-                    _eventManager.AddItemToInventory(headItem);
+                    _eventManager.AddItemToInventory(_gameManager.headItem);
                 }
-                headItem = currentlyDraggedItem;
+                _gameManager.headItem = currentlyDraggedItem;
                 headImage.sprite = currentlyDraggedItem.wornSprite;
                 break;
             case ClothType.Torso:
-                torsoItem = currentlyDraggedItem;
+                if (_gameManager.torsoItem != null)
+                {
+                    _eventManager.AddItemToInventory(_gameManager.torsoItem);
+                }
+                _gameManager.torsoItem = currentlyDraggedItem;
                 torsoImage.sprite = currentlyDraggedItem.wornSprite;
                 break;
             case ClothType.Legs:
-                legsItem = currentlyDraggedItem;
+                if (_gameManager.legsItem != null)
+                {
+                    _eventManager.AddItemToInventory(_gameManager.legsItem);
+                }
+                _gameManager.legsItem = currentlyDraggedItem;
                 legsImage.sprite = currentlyDraggedItem.wornSprite;
                 break;
             case ClothType.Feet:
-                feetItem = currentlyDraggedItem;
+                if (_gameManager.feetItem != null)
+                {
+                    _eventManager.AddItemToInventory(_gameManager.feetItem);
+                }
+                _gameManager.feetItem = currentlyDraggedItem;
                 feetImage.sprite = currentlyDraggedItem.wornSprite;
                 break;
         }
@@ -77,5 +85,7 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         currentlyDraggedItem = null;
         currentGameobject = null;
     }
+
+   
 
 }
