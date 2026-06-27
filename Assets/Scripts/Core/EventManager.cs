@@ -30,4 +30,8 @@ public class EventManager : MonoBehaviour
     public event Action<string> onStartDialogue;
     public void StartDialogue(string node) => onStartDialogue?.Invoke(node);
 
+    //--Room Manager--
+    public event Action<string> onChangeRoom;
+    public void ChangeRoom(string roomName) => onChangeRoom?.Invoke(roomName);
+
 }

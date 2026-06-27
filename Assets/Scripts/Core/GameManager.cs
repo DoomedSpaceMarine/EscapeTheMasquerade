@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     private DialogueRunner _dialogueRunner;
 
+    private int shadowMilkCounter;
+
     private void Start()
     {
         _eventManager = FindFirstObjectByType<EventManager>();
@@ -30,7 +32,7 @@ public class GameManager : MonoBehaviour
         _dialogueRunner.AddCommandHandler("dracula_test", DraculaTest);
         _dialogueRunner.AddCommandHandler("dracuul_bad", ShowBadEnding);
         _dialogueRunner.AddCommandHandler("dracuul_good", ShowGoodEnding);
-
+        _dialogueRunner.AddCommandHandler("shadow_milk", ShadowMilkTest);
         badEnding.SetActive(false);
         goodEnding.SetActive(false);
     }
@@ -54,6 +56,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void ShadowMilkTest()
+    {
+        StartCoroutine(ShadowMilkDelay());
+    }
+
     private void ShowBadEnding()
     {
         badEnding.SetActive(true);
@@ -74,5 +81,35 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         _eventManager.StartDialogue(loseDraculaNode);
+    }
+
+    private IEnumerator ShadowMilkDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+
+        _eventManager.ChangeRoom("Study");
+
+        if (headItem != null && headItem.clothTag == ClothTag.Servant)
+        {
+            shadowMilkCounter++;
+        }
+        if (torsoItem != null && torsoItem.clothTag == ClothTag.Servant)
+        {
+            shadowMilkCounter++;
+        }
+        if (legsItem != null && legsItem.clothTag == ClothTag.Servant)
+        {
+            shadowMilkCounter++;
+        }
+        if (feetItem != null && feetItem.clothTag == ClothTag.Servant)
+        {
+            shadowMilkCounter++;
+        }
+
+        if (shadowMilkCounter < 2)
+        {
+            _eventManager.StartDialogue("ShadowMilkKick");
+        }
+
     }
 }

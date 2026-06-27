@@ -19,3 +19,24 @@ title: FinalJudgement
 The corridor door opens into a ballroom full of guests and in the center Dracula awaits.
 <<dracula_test>>
 ===
+
+title: StudyDoor
+---
+    -> Open Door
+        <<shadow_milk>>
+    -> Listen
+        <<jump AngryShadowMilk>>
+===
+
+title: AngryShadowMilk
+---
+Behind this door seems to be quiet...
+Occasionally you can hear mumbling.
+Relyn Valtien: It's a mess here, where are those good for nothing servants when you need them!?
+===
+
+title: ShadowMilkKick
+---
+Relyn Valtien: Who are you? Get out now!
+<<change_room Corridor>>
+===

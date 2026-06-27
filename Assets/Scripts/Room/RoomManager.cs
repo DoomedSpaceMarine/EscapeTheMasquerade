@@ -21,11 +21,13 @@ public class RoomManager : MonoBehaviour
         _eventManager = FindFirstObjectByType<EventManager>();
 
         _eventManager.onToggleCloset += ToggleClosetCanvas;
+        _eventManager.onChangeRoom += ChangeRoom;
     }
 
     private void OnDisable()
     {
         _eventManager.onToggleCloset -= ToggleClosetCanvas;
+        _eventManager.onChangeRoom -= ChangeRoom;
     }
 
     private void Awake()
@@ -66,5 +68,38 @@ public class RoomManager : MonoBehaviour
                 }
             }
         }
+
+        if(roomName == "Study")
+        {
+            for (int i = 0; i < rooms.Count; i++)
+            {
+                if (rooms[i].roomType == RoomType.Study)
+                {
+                    rooms[i].gameObject.SetActive(true);
+                }
+
+                if (rooms[i].roomType == RoomType.Corridor)
+                {
+                    rooms[i].gameObject.SetActive(false);
+                }
+            }
+        }
+
+        if (roomName == "Corridor")
+        {
+            for (int i = 0; i < rooms.Count; i++)
+            {
+                if (rooms[i].roomType == RoomType.Corridor)
+                {
+                    rooms[i].gameObject.SetActive(true);
+                }
+
+                if (rooms[i].roomType == RoomType.Study)
+                {
+                    rooms[i].gameObject.SetActive(false);
+                }
+            }
+        }
     }
-}
+    }
+
