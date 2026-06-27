@@ -14,6 +14,12 @@ public class Inventory : MonoBehaviour
     [SerializeField] private List<ClothItemSO> legsClothes = new List<ClothItemSO>();
     [SerializeField] private List<ClothItemSO> feetClothes = new List<ClothItemSO>();
 
+    //Slot parents
+    [SerializeField] private GameObject headSlotParent;
+    [SerializeField] private GameObject torsoSlotParent;
+    [SerializeField] private GameObject legsSlotParent;
+    [SerializeField] private GameObject feetSlotParent;
+
     //Slots
     [SerializeField] private List<InventorySlot> headSlots = new List<InventorySlot>();
     [SerializeField] private List<InventorySlot> torsoSlots = new List<InventorySlot>();
@@ -26,12 +32,22 @@ public class Inventory : MonoBehaviour
 
         _eventManager.onAddItemToInventory += AddItemToInventory;
         _eventManager.onRemoveItemFromInventory += RemoveItemFromInventory;
+        _eventManager.onOpenInventory += OpenInventory;
     }
 
     private void OnDisable()
     {
         _eventManager.onAddItemToInventory -= AddItemToInventory;
         _eventManager.onRemoveItemFromInventory -= RemoveItemFromInventory;
+        _eventManager.onOpenInventory -= OpenInventory;
+    }
+
+    private void Start()
+    {
+        headSlotParent.SetActive(false);
+        torsoSlotParent.SetActive(false);
+        legsSlotParent.SetActive(false);
+        feetSlotParent.SetActive(false);
     }
 
     private void AddItemToInventory(ClothItemSO item)
@@ -68,6 +84,32 @@ public class Inventory : MonoBehaviour
                 break;
             case ClothType.Feet:
                 feetClothes.Remove(item);
+                break;
+        }
+    }
+
+    private void OpenInventory(ClothType clothType)
+    {
+        switch (clothType)
+        {
+            case ClothType.Head:
+                headSlotParent.SetActive(true);
+                DrawInventory(clothType);
+                break;
+
+            case ClothType.Torso:
+                torsoSlotParent.SetActive(true);
+                DrawInventory(clothType);
+                break;
+
+            case ClothType.Legs:
+                legsSlotParent.SetActive(true);
+                DrawInventory(clothType);
+                break;
+
+            case ClothType.Feet:
+                feetSlotParent.SetActive(true);
+                DrawInventory(clothType);
                 break;
         }
     }

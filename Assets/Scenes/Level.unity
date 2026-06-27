@@ -686,7 +686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &569756608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2184,6 +2184,10 @@ MonoBehaviour:
   torsoClothes: []
   legsClothes: []
   feetClothes: []
+  headSlotParent: {fileID: 970552570}
+  torsoSlotParent: {fileID: 1050605669}
+  legsSlotParent: {fileID: 829464562}
+  feetSlotParent: {fileID: 96410849}
   headSlots:
   - {fileID: 1151079768}
   - {fileID: 269643421}

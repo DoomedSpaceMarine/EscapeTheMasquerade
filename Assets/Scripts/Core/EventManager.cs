@@ -19,5 +19,8 @@ public class EventManager : MonoBehaviour
     //Remove item from inventory
     public event Action<ClothItemSO> onRemoveItemFromInventory;
     public void RemoveItemFromInventory(ClothItemSO item) => onRemoveItemFromInventory?.Invoke(item);
+    //Open Inventory
+    public event Action<ClothType> onOpenInventory;
+    public void OpenInventory(ClothType clothType) => onOpenInventory?.Invoke(clothType);
 
 }

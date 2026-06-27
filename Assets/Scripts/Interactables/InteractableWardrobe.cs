@@ -27,5 +27,6 @@ public class InteractableWardrobe : MonoBehaviour, IPointerEnterHandler, IPointe
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         _eventManager.ToggleCloset(true);
+        _eventManager.OpenInventory(clothType);
     }
 }
