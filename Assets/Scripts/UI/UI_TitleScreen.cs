@@ -15,7 +15,7 @@ public class UI_TitleScreen : MonoBehaviour
 
     private void PlayButton()
     {
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Introduction");
     }
 
     private void QuitButton()
