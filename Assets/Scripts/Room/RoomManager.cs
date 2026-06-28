@@ -16,6 +16,9 @@ public class RoomManager : MonoBehaviour
 
    private DialogueRunner _dialogueRunner;
 
+    [SerializeField] private GameObject shadowMilkNeutral;
+    [SerializeField] private GameObject shadowMilkAngry;
+
     private void OnEnable()
     {
         _eventManager = FindFirstObjectByType<EventManager>();
@@ -97,6 +100,8 @@ public class RoomManager : MonoBehaviour
                 if (rooms[i].roomType == RoomType.Study)
                 {
                     rooms[i].gameObject.SetActive(false);
+                    shadowMilkNeutral.SetActive(true);
+                    shadowMilkAngry.SetActive(false);
                 }
             }
         }

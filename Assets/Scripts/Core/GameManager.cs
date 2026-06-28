@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     private int shadowMilkCounter;
     private int guardCounter;
 
+    [SerializeField] private GameObject shadowMilkNeutral;
+    [SerializeField] private GameObject shadowMilkAngry;
+
+
     private void Start()
     {
         _eventManager = FindFirstObjectByType<EventManager>();
@@ -123,6 +127,8 @@ public class GameManager : MonoBehaviour
 
         if (shadowMilkCounter < 2)
         {
+            shadowMilkNeutral.SetActive(false);
+            shadowMilkAngry.SetActive(true);
             _eventManager.StartDialogue("ShadowMilkKick");
         }
 
