@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38c54f50ddd4be74f85d4c11b6248ae1, type: 3}
-  m_Name: Lady_Head_Hat_0
+  m_Name: Lady_Feet_1
   m_EditorClassIdentifier: Assembly-CSharp::ClothItemSO
-  wardrobeSprite: {fileID: 6156039873500756647, guid: fadd7b38d7f93414f82be16aa6c85da5, type: 3}
-  wornSprite: {fileID: 0}
-  clothType: 0
+  wardrobeSprite: {fileID: 21300000, guid: 4c6218473f5bf214f845aa09eb8f0c47, type: 3}
+  wornSprite: {fileID: 21300000, guid: b8b50d0c1fb894a46a3814209591f46d, type: 3}
+  clothType: 3
   clothTag: 2
