@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 81ea42c19103c364da0d067625431dcc
+guid: faf02ab589b033b4c800f67e347dcce5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7546669703794323024
-    second: Servant_Legs_1_0
+      213: 4728239835081460353
+    second: Dracula_Legs_0
+  - first:
+      213: -4688106374160034882
+    second: Dracula_Legs_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Servant_Legs_1_0
+      name: Dracula_Legs_0
       rect:
         serializedVersion: 2
-        x: 110
-        y: 52
-        width: 260
-        height: 568
+        x: 94
+        y: 96
+        width: 303
+        height: 572
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b1132c63e7d44790800000000000000
-      internalID: -7546669703794323024
+      spriteID: 18ac1e624151e9140800000000000000
+      internalID: 4728239835081460353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dracula_Legs_1
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 167
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb352f2671080feb0800000000000000
+      internalID: -4688106374160034882
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Servant_Legs_1_0: -7546669703794323024
+      Dracula_Legs_0: 4728239835081460353
+      Dracula_Legs_1: -4688106374160034882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
