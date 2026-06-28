@@ -9285,10 +9285,10 @@ MonoBehaviour:
   loseDraculaNode: GameOver
   badEnding: {fileID: 1839870029}
   goodEnding: {fileID: 1696685511}
-  headItem: {fileID: 0}
-  torsoItem: {fileID: 0}
-  legsItem: {fileID: 0}
-  feetItem: {fileID: 0}
+  headItem: {fileID: 11400000, guid: df0687901d5def041af22acf74417957, type: 2}
+  torsoItem: {fileID: 11400000, guid: 40ead5bd7922d434d92d7bb40330402b, type: 2}
+  legsItem: {fileID: 11400000, guid: 6fea38ec212d1a3478af3e1a19ebb9bf, type: 2}
+  feetItem: {fileID: 11400000, guid: 8ae07fd90bebfcb40b3faeb7c19f42da, type: 2}
   shadowMilkNeutral: {fileID: 867230105}
   shadowMilkAngry: {fileID: 1412675590}
   hint1: {fileID: 110584722}
