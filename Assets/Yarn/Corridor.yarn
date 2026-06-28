@@ -76,3 +76,8 @@ Guard: My Lady.
 <<change_room Ladyroom>>
 ===
 
+title: Rack
+---
+A rack full of various pieces of clothing, you take some with you. 
+===
+
