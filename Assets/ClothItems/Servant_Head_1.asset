@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c54f50ddd4be74f85d4c11b6248ae1, type: 3}
   m_Name: Servant_Head_1
   m_EditorClassIdentifier: Assembly-CSharp::ClothItemSO
-  wardrobeSprite: {fileID: 0}
+  wardrobeSprite: {fileID: 21300000, guid: 327427638c08e4342ab95b38a1c00aaf, type: 3}
   wornSprite: {fileID: 21300000, guid: dc061993132955846b94920ba3682851, type: 3}
   clothType: 0
   clothTag: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c54f50ddd4be74f85d4c11b6248ae1, type: 3}
   m_Name: Dracula_Torso
   m_EditorClassIdentifier: Assembly-CSharp::ClothItemSO
-  wardrobeSprite: {fileID: 0}
+  wardrobeSprite: {fileID: 21300000, guid: 0a4187f1475ba5745830273e61021ba5, type: 3}
   wornSprite: {fileID: 21300000, guid: d141c3041fbff124cb9ce6f84524a4e5, type: 3}
   clothType: 1
   clothTag: 1
