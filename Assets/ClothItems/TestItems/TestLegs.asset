@@ -15,4 +15,4 @@ MonoBehaviour:
   wardrobeSprite: {fileID: 21300000, guid: 0dd09f5a6d5266044b1115e39d09cc5b, type: 3}
   wornSprite: {fileID: 21300000, guid: 6eabe5a32e3be784f9e196342dcfd813, type: 3}
   clothType: 2
-  clothTag: 0
+  clothTag: 2

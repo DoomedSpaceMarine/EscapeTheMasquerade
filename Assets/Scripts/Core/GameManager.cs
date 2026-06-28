@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Yarn.Unity;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
     private DialogueRunner _dialogueRunner;
 
     private int shadowMilkCounter;
+    private int guardCounter;
 
     private void Start()
     {
@@ -33,6 +35,9 @@ public class GameManager : MonoBehaviour
         _dialogueRunner.AddCommandHandler("dracuul_bad", ShowBadEnding);
         _dialogueRunner.AddCommandHandler("dracuul_good", ShowGoodEnding);
         _dialogueRunner.AddCommandHandler("shadow_milk", ShadowMilkTest);
+        _dialogueRunner.AddCommandHandler("guard_test", GuardTest);
+        _dialogueRunner.AddCommandHandler("title_screen", TransitionTitleScreen);
+
         badEnding.SetActive(false);
         goodEnding.SetActive(false);
     }
@@ -61,6 +66,11 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ShadowMilkDelay());
     }
 
+    private void GuardTest()
+    {
+        StartCoroutine(GuardDelay());
+    }
+
     private void ShowBadEnding()
     {
         badEnding.SetActive(true);
@@ -69,6 +79,11 @@ public class GameManager : MonoBehaviour
     private void ShowGoodEnding()
     {
         goodEnding.SetActive(true);
+    }
+
+    private void TransitionTitleScreen()
+    {
+        SceneManager.LoadScene("TitleScreen");
     }
 
     private  IEnumerator WinDelay()
@@ -112,4 +127,34 @@ public class GameManager : MonoBehaviour
         }
 
     }
-}
+
+    private IEnumerator GuardDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (headItem != null && headItem.clothTag == ClothTag.Lady)
+        {
+            guardCounter++;
+        }
+        if (torsoItem != null && torsoItem.clothTag == ClothTag.Lady)
+        {
+            guardCounter++;
+        }
+        if (legsItem != null && legsItem.clothTag == ClothTag.Lady)
+        {
+            guardCounter++;
+        }
+        if (feetItem != null && feetItem.clothTag == ClothTag.Lady)
+        {
+            guardCounter++;
+        }
+
+        if (guardCounter < 3)
+        {
+            _eventManager.StartDialogue("Staked");
+        }
+        else
+        {
+            _eventManager.StartDialogue("Lady");
+        }
+    }
+    }

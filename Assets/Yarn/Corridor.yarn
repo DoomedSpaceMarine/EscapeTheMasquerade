@@ -46,3 +46,33 @@ title: Presents
 In the present boxes, you find various pieces of clothing. 
 You take them. 
 ===
+
+title: Guard
+---
+Before this particular door stands an menacing guard. 
+    -> Go to the room.
+        <<guard_test>>
+    -> Ask why the guard is standing there.
+        <<jump GuardAsk>>
+===
+
+title: GuardAsk
+---
+Guard: Only the lady shall pass.
+===
+
+title: Staked
+---
+You try to enter the room regardless of the menacing guard standing before you. 
+As you tries to pass, the guard pulls out a wooden stake and drives it through your heart. 
+Unfortunately for you, you are not a vampire, who would go into an unconscious state,
+No, you are a human and die instantly from the attack.
+<<title_screen>>
+===
+
+title: Lady
+---
+Guard: My Lady.
+<<change_room Ladyroom>>
+===
+

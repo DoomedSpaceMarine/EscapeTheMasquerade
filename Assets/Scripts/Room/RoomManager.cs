@@ -100,6 +100,22 @@ public class RoomManager : MonoBehaviour
                 }
             }
         }
+
+        if (roomName == "Ladyroom")
+        {
+            for (int i = 0; i < rooms.Count; i++)
+            {
+                if (rooms[i].roomType == RoomType.LadyRoom)
+                {
+                    rooms[i].gameObject.SetActive(true);
+                }
+
+                if (rooms[i].roomType == RoomType.Corridor)
+                {
+                    rooms[i].gameObject.SetActive(false);
+                }
+            }
+        }
     }
     }
 
