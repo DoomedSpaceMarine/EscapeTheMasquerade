@@ -1673,7 +1673,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableItem
   interactIcon: {fileID: 2006719235}
   items:
-  - {fileID: 11400000, guid: 40ddcc6660b605340bb1ca474a908b48, type: 2}
+  - {fileID: 11400000, guid: 17951a4c702bc1746b5e3cc57343de44, type: 2}
+  - {fileID: 11400000, guid: 43440695c4a43bd4f86d702f899e785f, type: 2}
+  - {fileID: 11400000, guid: c37469c3fed40434dacb9b1cf3cd8447, type: 2}
   dialogueNode: Presents
 --- !u!114 &404214853
 MonoBehaviour:
@@ -2349,7 +2351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 24, y: 6}
   m_SizeDelta: {x: 339, y: 566}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &522956943
@@ -3365,7 +3367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7924528, g: 0.49590597, b: 0.49590597, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4601,8 +4603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -47.787, y: -477.51}
-  m_SizeDelta: {x: 647.4459, y: 130.411}
+  m_AnchoredPosition: {x: -19.534, y: -452.94226}
+  m_SizeDelta: {x: 1126.516, y: 179.546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048168371
 MonoBehaviour:
@@ -5129,8 +5131,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.792685, y: -474.69}
-  m_SizeDelta: {x: 629.7159, y: 136.0595}
+  m_AnchoredPosition: {x: -16.7412, y: -434.4325}
+  m_SizeDelta: {x: 586.0077, y: 216.5746}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072096042
 MonoBehaviour:
@@ -5223,7 +5225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -551.56, y: -317}
+  m_AnchoredPosition: {x: -632, y: -377}
   m_SizeDelta: {x: 370, y: 213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098235540
@@ -5278,11 +5280,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableItem
   interactIcon: {fileID: 1536157775}
   items:
-  - {fileID: 11400000, guid: 40ddcc6660b605340bb1ca474a908b48, type: 2}
-  - {fileID: 11400000, guid: 2ce72a7cd543aa14a9de9673c589c25d, type: 2}
-  - {fileID: 11400000, guid: 3b4bc940ea3ca0f43b5388b91c9dc86d, type: 2}
-  - {fileID: 11400000, guid: d02bd5aa90b719544a6350fd72937048, type: 2}
-  - {fileID: 11400000, guid: f1e485f3d335dc14aaa9ae1c63f78973, type: 2}
+  - {fileID: 11400000, guid: ed614e01da378a64db1dc7a6de05635d, type: 2}
+  - {fileID: 11400000, guid: 423165c5e4da83141b10a6d879f29bdf, type: 2}
+  - {fileID: 11400000, guid: 0db590fd0c447ed4cab003cdaeb027c5, type: 2}
+  - {fileID: 11400000, guid: c535ee81c460baf4cb1ff0efca3daddb, type: 2}
+  - {fileID: 11400000, guid: 63c410e31a5934c44b11e58b4ff8f4a1, type: 2}
+  - {fileID: 11400000, guid: f1d658500eb4a1f4fb77c1f5142551a4, type: 2}
   dialogueNode: Basket
 --- !u!1001 &1107398776
 PrefabInstance:
@@ -7250,8 +7253,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.4016, y: -460.39874}
-  m_SizeDelta: {x: 861.5645, y: 181.002}
+  m_AnchoredPosition: {x: 20.693, y: -449.1491}
+  m_SizeDelta: {x: 1016.253, y: 203.502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1445030731
 MonoBehaviour:
@@ -9605,11 +9608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5210814184536835140, guid: 435c65aea43a544419359decfd215d25, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000011444
+      value: -9.6
       objectReference: {fileID: 0}
     - target: {fileID: 5210814184536835140, guid: 435c65aea43a544419359decfd215d25, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -28.3
       objectReference: {fileID: 0}
     - target: {fileID: 5210814184536835140, guid: 435c65aea43a544419359decfd215d25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10048,7 +10051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5210814184536835140, guid: 435c65aea43a544419359decfd215d25, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 97.7
+      value: 0.000015259
       objectReference: {fileID: 0}
     - target: {fileID: 5210814184536835140, guid: 435c65aea43a544419359decfd215d25, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10235,7 +10238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableItem
   interactIcon: {fileID: 1901312492}
   items:
-  - {fileID: 11400000, guid: 40ddcc6660b605340bb1ca474a908b48, type: 2}
+  - {fileID: 11400000, guid: 8fe51b961bf00fe4597b98c1c2ae1f62, type: 2}
+  - {fileID: 11400000, guid: a0568922b1b1a8241add109ec5ec6078, type: 2}
   dialogueNode: Presents
 --- !u!114 &1940865337
 MonoBehaviour:
