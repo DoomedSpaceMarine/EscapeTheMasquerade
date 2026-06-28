@@ -23,6 +23,8 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     //Naked sprite
     [SerializeField] private Sprite emptySprite;
 
+    [SerializeField] private AudioSource clothSFX;
+
     private void Start()
     {
         _eventManager = FindFirstObjectByType<EventManager>();
@@ -77,7 +79,7 @@ public class PlayerClothes : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                 feetImage.sprite = currentlyDraggedItem.wornSprite;
                 break;
         }
-
+        clothSFX.Play();
         currentGameobject.GetComponent<InventorySlot>().slotIsFull = false;
         currentGameobject.GetComponent<InventorySlot>().slotImage.sprite = null;
         _eventManager.RemoveItemFromInventory(currentlyDraggedItem);

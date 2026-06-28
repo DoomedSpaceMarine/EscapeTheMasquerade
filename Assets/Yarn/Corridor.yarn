@@ -33,12 +33,12 @@ title: AngryShadowMilk
 ---
 Behind this door seems to be quiet...
 Occasionally you can hear mumbling.
-Relyn Valtien: It's a mess here, where are those good for nothing servants when you need them!?
+Relyn Von Valtien: It's a mess here, where are those good for nothing servants when you need them!?
 ===
 
 title: ShadowMilkKick
 ---
-Relyn Valtien: Who are you? Get out now!
+Relyn Von Valtien: Who are you? Get out now!
 <<change_room Corridor>>
 ===
 
