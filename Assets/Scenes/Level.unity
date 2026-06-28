@@ -1771,8 +1771,9 @@ MonoBehaviour:
   interactIcon: {fileID: 2006719235}
   items:
   - {fileID: 11400000, guid: 17951a4c702bc1746b5e3cc57343de44, type: 2}
-  - {fileID: 11400000, guid: 43440695c4a43bd4f86d702f899e785f, type: 2}
+  - {fileID: 11400000, guid: 95298ef4a8e679b41912cc536edd6dc7, type: 2}
   - {fileID: 11400000, guid: c37469c3fed40434dacb9b1cf3cd8447, type: 2}
+  - {fileID: 11400000, guid: 6694a3314356d4b48807dc426cb44126, type: 2}
   dialogueNode: Presents
 --- !u!114 &404214853
 MonoBehaviour:
@@ -2307,7 +2308,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1319693733}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7262066351540048079, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: -1
@@ -2825,7 +2829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &569756608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3049,7 +3053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3441,7 +3445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3818,6 +3822,11 @@ CanvasRenderer:
 --- !u!1 &815901739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3416868783655305253, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 458349122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &815901743 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
   m_PrefabInstance: {fileID: 458349122}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &822833933
@@ -5714,11 +5723,14 @@ MonoBehaviour:
   interactIcon: {fileID: 1536157775}
   items:
   - {fileID: 11400000, guid: ed614e01da378a64db1dc7a6de05635d, type: 2}
+  - {fileID: 11400000, guid: 62ea68e9a5628fb48b1795463b9e7b52, type: 2}
   - {fileID: 11400000, guid: 423165c5e4da83141b10a6d879f29bdf, type: 2}
-  - {fileID: 11400000, guid: 0db590fd0c447ed4cab003cdaeb027c5, type: 2}
   - {fileID: 11400000, guid: c535ee81c460baf4cb1ff0efca3daddb, type: 2}
-  - {fileID: 11400000, guid: 63c410e31a5934c44b11e58b4ff8f4a1, type: 2}
+  - {fileID: 11400000, guid: 3555b73289d33f640b9cd2c6df5d1597, type: 2}
+  - {fileID: 11400000, guid: 0a210c332c7b7334d98a3ef25f8fe4ee, type: 2}
   - {fileID: 11400000, guid: f1d658500eb4a1f4fb77c1f5142551a4, type: 2}
+  - {fileID: 11400000, guid: 63c410e31a5934c44b11e58b4ff8f4a1, type: 2}
+  - {fileID: 11400000, guid: 9a8b804252e99094d93b9be7d43e512e, type: 2}
   dialogueNode: Basket
 --- !u!1001 &1107398776
 PrefabInstance:
@@ -6699,6 +6711,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1319693732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319693733}
+  - component: {fileID: 1319693735}
+  - component: {fileID: 1319693734}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1319693733
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319693732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 815901743}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1319693734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319693732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1319693735
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319693732}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1343831923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7089,7 +7176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7307,7 +7394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7917,11 +8004,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableItem
   interactIcon: {fileID: 760510118}
   items:
-  - {fileID: 11400000, guid: 40ddcc6660b605340bb1ca474a908b48, type: 2}
-  - {fileID: 11400000, guid: 2ce72a7cd543aa14a9de9673c589c25d, type: 2}
-  - {fileID: 11400000, guid: 3b4bc940ea3ca0f43b5388b91c9dc86d, type: 2}
-  - {fileID: 11400000, guid: d02bd5aa90b719544a6350fd72937048, type: 2}
-  - {fileID: 11400000, guid: f1e485f3d335dc14aaa9ae1c63f78973, type: 2}
+  - {fileID: 11400000, guid: 8fe51b961bf00fe4597b98c1c2ae1f62, type: 2}
+  - {fileID: 11400000, guid: bbba5ca1150d3064f8902c111d4353f9, type: 2}
+  - {fileID: 11400000, guid: c0a2991f5b93d3545becdeaf8abbe567, type: 2}
+  - {fileID: 11400000, guid: e714dad11be427a4cbdabb1921039dde, type: 2}
   dialogueNode: Rack
 --- !u!114 &1484808151
 MonoBehaviour:
@@ -8609,7 +8695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8769,7 +8855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10830,8 +10916,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableItem
   interactIcon: {fileID: 1901312492}
   items:
-  - {fileID: 11400000, guid: 8fe51b961bf00fe4597b98c1c2ae1f62, type: 2}
+  - {fileID: 11400000, guid: 43440695c4a43bd4f86d702f899e785f, type: 2}
   - {fileID: 11400000, guid: a0568922b1b1a8241add109ec5ec6078, type: 2}
+  - {fileID: 11400000, guid: 38cdc1f516e0a6d4ab0d0e808d875e1d, type: 2}
+  - {fileID: 11400000, guid: 10282dd11ce9e7847883d2e515645e6e, type: 2}
+  - {fileID: 11400000, guid: c4b24a10af76b2d4087bf233de751080, type: 2}
   dialogueNode: Presents
 --- !u!114 &1940865337
 MonoBehaviour:
