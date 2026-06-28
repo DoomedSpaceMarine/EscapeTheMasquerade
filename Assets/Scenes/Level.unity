@@ -1911,6 +1911,51 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5210814184536835140, guid: 435c65aea43a544419359decfd215d25, type: 3}
   m_PrefabInstance: {fileID: 410051168}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &429363834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429363836}
+  - component: {fileID: 429363835}
+  m_Layer: 0
+  m_Name: CustomCursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &429363835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429363834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3926cf96695276468a2aa6b53004fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomCursor
+  customCursor: {fileID: 2800000, guid: 4f8afb7100fbe614ebc4625092650b18, type: 3}
+--- !u!4 &429363836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429363834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1084.279, y: 586.72046, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &429905383 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6126006019297367416, guid: 435c65aea43a544419359decfd215d25, type: 3}
@@ -11320,3 +11365,4 @@ SceneRoots:
   - {fileID: 1890833778}
   - {fileID: 1232700995}
   - {fileID: 6336970801004166429}
+  - {fileID: 429363836}
