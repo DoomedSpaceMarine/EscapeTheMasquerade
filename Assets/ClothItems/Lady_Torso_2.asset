@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c54f50ddd4be74f85d4c11b6248ae1, type: 3}
+  m_Name: Lady_Torso_2
+  m_EditorClassIdentifier: Assembly-CSharp::ClothItemSO
+  wardrobeSprite: {fileID: 0}
+  wornSprite: {fileID: -1875765856201136582, guid: 03243816c82f48c4dae9a5f414af6d40, type: 3}
+  clothType: 1
+  clothTag: 2
