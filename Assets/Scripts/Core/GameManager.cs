@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject shadowMilkNeutral;
     [SerializeField] private GameObject shadowMilkAngry;
+    [SerializeField] private GameObject hint1;
 
 
     private void Start()
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
         _dialogueRunner.AddCommandHandler("shadow_milk", ShadowMilkTest);
         _dialogueRunner.AddCommandHandler("guard_test", GuardTest);
         _dialogueRunner.AddCommandHandler("title_screen", TransitionTitleScreen);
+        _dialogueRunner.AddCommandHandler("unlock_hint", UnlockHint);
 
         badEnding.SetActive(false);
         goodEnding.SetActive(false);
@@ -83,6 +85,11 @@ public class GameManager : MonoBehaviour
     private void ShowGoodEnding()
     {
         goodEnding.SetActive(true);
+    }
+
+    private void UnlockHint()
+    {
+        hint1.SetActive(true);
     }
 
     private void TransitionTitleScreen()
