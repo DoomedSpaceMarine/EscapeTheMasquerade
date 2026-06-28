@@ -10,6 +10,7 @@ public class InteractableHint : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [SerializeField] private bool hasUnlockableHint;
 
     [SerializeField] private GameObject[] unlockedHint;
+    [SerializeField] private GameObject shadow;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class InteractableHint : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
+        shadow.SetActive(true);
       hintObject.SetActive(true);
         if(hasUnlockableHint)
         {

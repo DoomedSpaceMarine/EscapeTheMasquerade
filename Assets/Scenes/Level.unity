@@ -256,6 +256,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16123808}
   m_CullTransparentMesh: 1
+--- !u!1 &20614157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 20614161}
+  - component: {fileID: 20614160}
+  - component: {fileID: 20614159}
+  - component: {fileID: 20614158}
+  m_Layer: 5
+  m_Name: Shadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &20614158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20614157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0dbae4bda34f6f45b713aac5d1548c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisableHint
+  hints:
+  - {fileID: 20614157}
+  - {fileID: 1121008016}
+  - {fileID: 976490395}
+  - {fileID: 1762111016}
+--- !u!114 &20614159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20614157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.44313726}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &20614160
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20614157}
+  m_CullTransparentMesh: 1
+--- !u!224 &20614161
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20614157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1431269647}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000061035, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &54410262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6126006019297367416, guid: 435c65aea43a544419359decfd215d25, type: 3}
@@ -321,6 +414,7 @@ MonoBehaviour:
   hintObject: {fileID: 1121008016}
   hasUnlockableHint: 0
   unlockedHint: []
+  shadow: {fileID: 20614157}
 --- !u!114 &95927461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4082,6 +4176,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0dbae4bda34f6f45b713aac5d1548c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisableHint
+  hints:
+  - {fileID: 20614157}
+  - {fileID: 1121008016}
+  - {fileID: 976490395}
+  - {fileID: 1762111016}
 --- !u!114 &976490399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4400,6 +4499,7 @@ MonoBehaviour:
   unlockedHint:
   - {fileID: 1880226758}
   - {fileID: 16123808}
+  shadow: {fileID: 20614157}
 --- !u!114 &1011052008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5554,6 +5654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0dbae4bda34f6f45b713aac5d1548c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisableHint
+  hints: []
 --- !u!114 &1121008021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5566,6 +5667,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0dbae4bda34f6f45b713aac5d1548c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisableHint
+  hints:
+  - {fileID: 20614157}
+  - {fileID: 976490395}
+  - {fileID: 1121008016}
+  - {fileID: 1762111016}
 --- !u!1 &1139028445
 GameObject:
   m_ObjectHideFlags: 0
@@ -6999,6 +7105,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 20614161}
   - {fileID: 1121008017}
   - {fileID: 976490396}
   - {fileID: 1762111017}
@@ -9084,6 +9191,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0dbae4bda34f6f45b713aac5d1548c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisableHint
+  hints:
+  - {fileID: 20614157}
+  - {fileID: 1121008016}
+  - {fileID: 976490395}
+  - {fileID: 1762111016}
 --- !u!114 &1762111019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10335,6 +10447,7 @@ MonoBehaviour:
   hasUnlockableHint: 1
   unlockedHint:
   - {fileID: 790971177}
+  shadow: {fileID: 20614157}
 --- !u!114 &1975217813
 MonoBehaviour:
   m_ObjectHideFlags: 0
