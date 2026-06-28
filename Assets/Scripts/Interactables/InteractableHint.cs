@@ -7,6 +7,10 @@ public class InteractableHint : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     [SerializeField] private GameObject hintObject;
 
+    [SerializeField] private bool hasUnlockableHint;
+
+    [SerializeField] private GameObject[] unlockedHint;
+
     private void Start()
     {
         interactIcon.SetActive(false);
@@ -25,5 +29,12 @@ public class InteractableHint : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public void OnPointerClick(PointerEventData pointerEventData)
     {
       hintObject.SetActive(true);
+        if(hasUnlockableHint)
+        {
+            for (int i = 0; i < unlockedHint.Length; i++)
+            {
+                unlockedHint[i].SetActive(true);
+            }
+        } 
     }
 }
