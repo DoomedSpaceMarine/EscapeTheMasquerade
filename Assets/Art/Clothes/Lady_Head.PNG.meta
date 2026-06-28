@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 81ea42c19103c364da0d067625431dcc
+guid: 04df981b24ac1304c8d7a0fa7dee10cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7546669703794323024
-    second: Servant_Legs_1_0
+      213: 5016880231057045632
+    second: Lady_Head_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Servant_Legs_1_0
+      name: Lady_Head_0
       rect:
         serializedVersion: 2
-        x: 110
-        y: 52
-        width: 260
-        height: 568
+        x: 173
+        y: 790
+        width: 176
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b1132c63e7d44790800000000000000
-      internalID: -7546669703794323024
+      spriteID: 088b5d45df98f9540800000000000000
+      internalID: 5016880231057045632
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Servant_Legs_1_0: -7546669703794323024
+      Lady_Head_0: 5016880231057045632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

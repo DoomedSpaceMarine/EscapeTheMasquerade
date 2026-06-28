@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Lady_Legs_1
   m_EditorClassIdentifier: Assembly-CSharp::ClothItemSO
   wardrobeSprite: {fileID: 0}
-  wornSprite: {fileID: 4467918352560732679, guid: a3244e5328cc7354d922b6d39cd0248a, type: 3}
+  wornSprite: {fileID: 21300000, guid: a3244e5328cc7354d922b6d39cd0248a, type: 3}
   clothType: 2
   clothTag: 2
