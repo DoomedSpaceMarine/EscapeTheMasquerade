@@ -9,6 +9,9 @@ public class InteractableItem : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [SerializeField] private ClothItemSO[] items;
     [SerializeField] private string dialogueNode;
 
+   [SerializeField] private bool hasSfx;
+    [SerializeField] private AudioSource itemSfx;
+
     private void Start()
     {
         _eventManager = FindFirstObjectByType<EventManager>();
@@ -27,6 +30,10 @@ public class InteractableItem : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
+        if (hasSfx)
+        {
+            itemSfx.Play();
+        }
         _eventManager.StartDialogue(dialogueNode);
         for(int i = 0; i < items.Length; i++)
         {
