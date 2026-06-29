@@ -7,6 +7,7 @@ public class InteractableWardrobe : MonoBehaviour, IPointerEnterHandler, IPointe
 
     [SerializeField] private GameObject interactIcon;
     [SerializeField] private ClothType clothType;
+    [SerializeField] private AudioSource wardrobeSfx;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class InteractableWardrobe : MonoBehaviour, IPointerEnterHandler, IPointe
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
+        wardrobeSfx.Play();
         _eventManager.ToggleCloset(true);
         _eventManager.OpenInventory(clothType);
     }

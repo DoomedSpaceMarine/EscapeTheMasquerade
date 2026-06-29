@@ -2090,6 +2090,135 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5210814184536835140, guid: 435c65aea43a544419359decfd215d25, type: 3}
   m_PrefabInstance: {fileID: 1846953442}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &430069944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 430069946}
+  - component: {fileID: 430069945}
+  m_Layer: 0
+  m_Name: WardrobeSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &430069945
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430069944}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 00a35f835ab393a4492af9bd18b35324, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &430069946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430069944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 739.02814, y: 356.9141, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &458349122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2738,7 +2867,7 @@ GameObject:
   - component: {fileID: 522825197}
   - component: {fileID: 522825196}
   m_Layer: 0
-  m_Name: Audio Source (1)
+  m_Name: ClothSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3429,6 +3558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableWardrobe
   interactIcon: {fileID: 1275914058}
   clothType: 0
+  wardrobeSfx: {fileID: 430069945}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,6 +4459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableWardrobe
   interactIcon: {fileID: 1183362717}
   clothType: 2
+  wardrobeSfx: {fileID: 430069945}
 --- !u!1 &894979048
 GameObject:
   m_ObjectHideFlags: 0
@@ -6545,7 +6676,7 @@ GameObject:
   - component: {fileID: 1232700995}
   - component: {fileID: 1232700994}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9137,6 +9268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableWardrobe
   interactIcon: {fileID: 1808057360}
   clothType: 1
+  wardrobeSfx: {fileID: 430069945}
 --- !u!1 &1649925143
 GameObject:
   m_ObjectHideFlags: 0
@@ -10005,6 +10137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableWardrobe
   interactIcon: {fileID: 1143969981}
   clothType: 3
+  wardrobeSfx: {fileID: 430069945}
 --- !u!1 &1828050656
 GameObject:
   m_ObjectHideFlags: 0
@@ -11558,6 +11691,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5210814184536835140, guid: 435c65aea43a544419359decfd215d25, type: 3}
   m_PrefabInstance: {fileID: 2028093212}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037644656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2037644657}
+  m_Layer: 0
+  m_Name: //Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2037644657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037644656}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 739.02814, y: 356.9141, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059785212
 GameObject:
   m_ObjectHideFlags: 0
@@ -12039,7 +12203,9 @@ SceneRoots:
   - {fileID: 569756611}
   - {fileID: 1431269647}
   - {fileID: 1890833778}
-  - {fileID: 1232700995}
   - {fileID: 6336970801004166429}
   - {fileID: 429363836}
+  - {fileID: 2037644657}
   - {fileID: 522825197}
+  - {fileID: 1232700995}
+  - {fileID: 430069946}
