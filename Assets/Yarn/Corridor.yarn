@@ -42,6 +42,18 @@ Relyn Von Valtien: Who are you? Get out now!
 <<change_room Corridor>>
 ===
 
+title: TalkShadowMilk
+---
+Relyn Von Valtien: Finally someone bothered to come here.
+Relyn Von Valtien: Well, don't just stand there and gawk!
+Relyn Von Valtien: Remove this clutter that invades my space!
+===
+
+title: ShadowMilkSatisfied
+---
+Relyn Von Valtien: Good, you may go now.
+===
+
 title: Presents
 ---
 In the present boxes, you find various pieces of clothing. 

@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject shadowMilkAngry;
     [SerializeField] private GameObject hint1;
 
+    [SerializeField] private InteractableTalk shadowMilkTalk;
+    private int shadowMilkDialogueIndex = 0;
+
 
     private void Start()
     {
@@ -96,6 +99,15 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScreen");
     }
+
+    public void UpdateShadowMilkDialogue()
+    {
+        shadowMilkDialogueIndex++;
+        if(shadowMilkDialogueIndex == 2)
+        {
+            shadowMilkTalk.SetDialogueNode("ShadowMilkSatisfied");
+        }
+    } 
 
     private  IEnumerator WinDelay()
     {
